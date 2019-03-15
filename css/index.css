@@ -1,0 +1,370 @@
+.center{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.swiper-slide .decorate{
+	margin: 0.7rem 0 0 0.6rem;
+	width: 1.65rem;
+	position: absolute;
+	z-index: 999;
+}
+.next-button{
+	width: .66rem;
+	height: .66rem;
+	border: 0.07rem solid rgba(255,255,255,0.7);
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	line-height: 0.66rem;
+	background: linear-gradient(#fc6468,#f9461f);
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0.2rem;
+}
+.line{
+	width: .52rem;
+	height: 0.09rem;
+	background-image: linear-gradient(0deg, 
+		#fc666e 0%, 
+		#f9461f 100%);
+	border-radius: 0.04rem;
+}
+.swiper-slide6 .line,
+.swiper-slide7 .line{
+	position: absolute;
+	top: 0.72rem;
+	right: 0.6rem;
+}
+.swiper-slide6 .title,
+.swiper-slide7 .title{
+	font-size: 0.5rem;
+	color: #434343;
+	position: absolute;
+	top: 1.24rem;
+	right: 0.6rem;
+}
+/* slide1开始 */
+.swiper-slide1{
+	background: url(../images/slide1/bg.png) no-repeat center center/cover;
+}
+
+.swiper-slide1 .fav{
+	width: 1.53rem;
+	height: 1.5rem;
+	position: absolute;
+	top: 0rem;
+	right: 0;
+}
+.swiper-slide1 .block{
+	width: 5.57rem;
+}
+.swiper-slide1 .quanquan{
+	width: 9.77rem;
+	top: 50%;
+	left: 50%;
+	margin-left: -4.89rem;
+	margin-top: -4.89rem;
+}
+.swiper-slide1 .shoes{
+	width: 6.94rem;
+}
+.swiper-slide1 .title{
+	width: 2.81rem;
+	position: absolute;
+	left: .6rem;
+	top: 70%;
+}
+.swiper-slide1 .gongyi{
+	width: 1.32rem;
+	position: absolute;
+	left: .6rem;
+	top: 85%;
+}
+.swiper-slide1 .price{
+	width: 1.88rem;
+	position: absolute;
+	right: .6rem;
+	top: 85%;
+}
+/* slide1结束 */
+/* slide2开始 */
+.swiper-slide2{
+	background: url(../images/slide2/bg.png) no-repeat center center/cover;
+}
+.swiper-slide2 .shoes{
+	width: 6.83rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 24%;
+}
+.swiper-slide2 .panel{
+	width: 6.9rem;
+	height: 4.7rem;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0.3rem;
+	border-radius: 0.2rem 0.2rem 0 0;
+}
+.swiper-slide2 .next-button{
+	bottom: 4.3rem;
+}
+.swiper-slide2 .line{
+	margin: 0.9rem 0 0 0.3rem;
+}
+.swiper-slide2 p{
+	margin: 0 0.3rem;
+}
+.swiper-slide2 .desc1{
+	font-size: 0.4rem;
+	line-height:0.4rem;
+	color: #828282;
+	margin-top: 0.47rem;
+}
+.swiper-slide2 .desc2{
+	font-size: .5rem;
+	line-height: .5rem;
+	color: #434343;
+	margin-top: 0.1rem;
+}
+.swiper-slide2 .desc3{
+	font-size: .18rem;
+	line-height: 0.3rem;
+	margin-top: 0.5rem;
+	color: #828282;
+}
+/* slide2结束 */
+/* slide3开始 */
+.swiper-slide3{
+	background-image: linear-gradient(-37deg, #f2f2f2 0%, #fcfcfc 100%);
+}
+.swiper-slide3 .shoes{
+	width: 6.83rem;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.swiper-slide3 .line{
+	position: absolute;
+	left: 0.6rem;
+	top: 2.77rem;
+}
+.swiper-slide3 .desc1{
+	font-size: .5rem;
+	font-weight: bold;
+	color: #434343;
+	position: absolute;
+	left: 0.6rem;
+	top: 3.48rem;
+}
+.swiper-slide3 .desc2{
+	position: absolute;
+	left: 0.6rem;
+	top: 4.5rem;
+	font-weight: normal;
+	font-size: .4rem;
+	line-height: .48rem;
+	color: #828282;
+}
+
+/* slide3结束 */
+
+/* slide4开始 */
+.swiper-slide4 .bg{
+	position: absolute;
+	height: 50%;
+	top: 0;
+	width: 100%;
+	background-image: linear-gradient(0deg, #fc666e 0%, #f9461f 100%);
+}
+.swiper-slide4 .shoes{
+	width: 6.31rem;
+	position: absolute;
+	z-index: 999;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: -2.42rem;
+}
+.swiper-slide4 .discount{
+	width: 6.76rem;
+	position: absolute;
+	z-index: 999;
+	top: 1.4rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.swiper-slide4 .line{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 8.67rem;
+}
+.swiper-slide4 .title{
+	font-size: 0.5rem;
+	color: #434343;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 9.19rem;
+}
+.swiper-slide4 .desc{
+	font-size: 0.4rem;
+	color: #828282;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 10.23rem;
+}
+/* slide4 结束 */
+
+/* slide5 开始 */
+.swiper-slide5{
+	background-color: #f2f2f2;
+}
+.swiper-slide5 .shoes{
+	margin-top: 1.73rem;
+}
+.swiper-slide5 .line{
+	position: absolute;
+	top: 8.13rem;
+	right: 0.6rem;
+}
+.swiper-slide5 .title{
+	font-size: 0.5rem;
+	color: #434343;
+	position: absolute;
+	top: 8.61rem;
+	right: 0.6rem;
+}
+.swiper-slide5 .desc{
+	font-size: 0.4rem;
+	color: #828282;
+	position: absolute;
+	top: 9.65rem;
+	text-align: right;
+	right: 0.6rem;
+}
+/* slide5 结束 */
+
+/* slide6 开始 */
+.swiper-slide6 .shoes-box{
+	text-align: center;
+	margin-top: 2.79rem;
+}
+.swiper-slide6 .shoes{
+	display: inline-block;
+	width: 6.9rem;
+	margin-bottom: .27rem;
+}
+.swiper-slide6 .shoes video{
+	width: 100%;
+	height: 100%;
+}
+/* slide6 结束 */
+
+/* slide7 开始 */
+.swiper-slide7{
+	background-color: #f2f2f2;
+}
+.swiper-slide7 .options{
+	width: 6.3rem;
+	display: block;
+	margin: 3.51rem auto 0;
+}
+.swiper-slide7 .index{
+	width: 6.3rem;
+	display: block;
+	margin: 0.86rem auto 0;
+}
+/* slide7 结束 */
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+	top: 7.12rem;
+	bottom: auto;
+}
+.swiper-pagination-bullet-active{
+	background-image: linear-gradient(0deg, 
+		#fc666e 0%, 
+		#f9461f 100%);
+}
+.swiper-slide8 .panel .line{
+	margin: 0.68rem 0 0 0.6rem;
+
+}
+.swiper-slide8 .panel{
+	height: 5.6rem;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 999;
+	border-radius: .2rem;
+}
+.price-box{
+	margin: 0.57rem 0.6rem 0.9rem;
+	overflow: hidden;
+	color: #434343;
+}
+.price-box .left{
+	float: left;
+}
+.price-box span{
+	font-size: 0.24rem;
+	color: #828282;
+}
+.price-box .price{
+	font-size: 0.8rem;
+	font-weight: bold;
+	float: right;
+	color: #f9461f;
+}
+.price-box .brand{
+	font-size: 0.5rem;
+	font-style: italic;
+}
+.swiper-slide8 .size-box{
+	padding: 0 0.6rem;
+	color: #434343;
+}
+.swiper-container-size{
+	font-size: 0.2rem;
+	
+}
+.swiper-slide8 .swiper-container-size .swiper-slide{
+	text-align: center;
+	font-size: 0.3rem;
+	margin: 0.3rem 0;
+}
+.swiper-slide8 .tool{
+	margin: 0 0.6rem;
+	text-align: center;
+}
+.swiper-slide8 .tool .fav {
+	float: left;
+}
+.swiper-slide8 .tool .fav img{
+	width: 0.88rem;
+}
+.swiper-slide8 .tool .buy-button{
+	width: 3.3rem;
+	height: 0.88rem;
+	display: inline-block;
+	background-image: linear-gradient(0deg, 
+		#fc666e 0%, 
+		#f9461f 100%);
+	border-radius: 0.44rem;
+	color: #fff;
+	line-height: 0.88rem;
+}

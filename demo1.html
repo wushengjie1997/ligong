@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box {
+            width: 80%;
+            height: 50%;
+            border: 1px solid #000;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        .box div {
+            float: left;
+            width: 12.5%;
+            height: 100%;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .box div:nth-child(2n) {
+            background: #ccc;
+        }
+    </style>
+
+</head>
+<body>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>i</div>
+</div>
+
+<script>
+
+
+    //var num=1
+
+    // 运算符  算数运算符   + - * 、 %
+    // 逻辑运算符  ||    &&   ！
+
+
+    //流程控制
+
+
+    // if (num>0){
+    //     console.log("大于零")
+    // }else{
+    //     console.log("小于等于零")
+    // }
+    //  100-200  3  1     4  2   5  3
+    //  鸡兔同笼  35   94
+
+
+
+
+    // for (var i=100;i<=200;i++){
+    //     if (i%3==1&&i%4==2&&i%5==3){
+    //         console.log(i)
+    //     }
+    // }
+
+
+    // for(var ji=1;ji<=35;ji++){
+    //     tu=35-ji
+    //     if(ji*2+tu*4==94){
+    //         console.log(ji)
+    //         console.log(tu)
+    //     }
+    // }
+
+
+
+
+    var datas = {
+        49: {
+            div: 0, audio: 400 + 400 * (1 / 8)
+        },
+        50: {
+            div: 1, audio: 400 + 400 * (2 / 8)
+        },
+        51: {
+            div: 2, audio: 400 + 400 * (3 / 8)
+        },
+        52: {
+            div: 3, audio: 400 + 400 * (4 / 8)
+        },
+        53: {
+            div: 4, audio: 400 + 400 * (5 / 8)
+        },
+        54: {
+            div: 5, audio: 400 + 400 * (6 / 8)
+        },
+        55: {
+            div: 6, audio: 400 + 400 * (7 / 8)
+        },
+        56: {
+            div: 7, audio: 400 + 400 * (8 / 8)
+        }
+    };
+
+
+
+    var keys = document.querySelectorAll(".box div");
+    // 创建音频总对象
+    var audio=new AudioContext()
+    // 存储振荡器的变量
+    var ao
+    document.onkeydown = function (ev) {
+        //获得按下键盘的键盘码
+        code = ev.keyCode
+        //创建一个振荡器
+        ao=audio.createOscillator()
+        // 创建一个音频分析器
+        var as=audio.createAnalyser()
+        // 创建一个扩音器
+        var gain=audio.createGain()
+        // 将振荡器交给分析器分析
+        ao.connect(as)
+        //将分析的结果交给扩音器
+        ao.connect(gain)
+        // 将声音传递到音响
+        gain.connect(audio.destination)
+
+        // 通过傅里叶变化指定音频频率的大小，以及声音的长度
+        ao.frequency.setValueAtTime(datas[code]["audio"],audio.currentTime)
+
+        //即时播放
+        ao.start(audio.currentTime)
+
+        // 让对应的钢琴键发生变化
+        keys[datas[code]["div"]].style.boxShadow = "0 0 30px #000 inset"
+    }
+
+    document.onkeyup = function (ev) {
+        // 键盘抬起的时候获得键盘码
+        code = ev.keyCode
+        // 停止声音的播放
+        ao.stop(audio.currentTime)
+        //  让钢琴键的变化回归原始样式
+        keys[datas[code]["div"]].style.boxShadow = "none"
+
+    }
+</script>
+</body>
+</html>
